@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CppCommon
-   &#160;<span id="projectnumber">1.0.0.0</span>
+   &#160;<span id="projectnumber">1.0.3.0</span>
    </div>
    <div id="projectbrief">C++ Common Library</div>
   </td>
@@ -442,6 +442,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_common_1_1_u_u_i_d.html">UUID</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universally unique identifier (<a class="el" href="class_cpp_common_1_1_u_u_i_d.html" title="Universally unique identifier (UUID)">UUID</a>)  <a href="class_cpp_common_1_1_u_u_i_d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_common_1_1_validate_aligned_storage.html">ValidateAlignedStorage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligned storage validator.  <a href="class_cpp_common_1_1_validate_aligned_storage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cpp_common_1_1_wait_batcher.html">WaitBatcher</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiple producers / multiple consumers wait batcher.  <a href="class_cpp_common_1_1_wait_batcher.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,6 +582,32 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ac1ca6affe95577c60f18950cd8682db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported console colors.  <a href="namespace_cpp_common.html#ac1ca6affe95577c60f18950cd8682db4">More...</a><br /></td></tr>
 <tr class="separator:ac1ca6affe95577c60f18950cd8682db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0a61403e6afce5de28a26592268f68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68">ThreadPriority</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68aa5daf7f2ebbba4975d61dab1c40188c7">ThreadPriority::IDLE</a> = 0x00, 
+<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68a664626f39fdbfdb9cfe98285a9e161f9">ThreadPriority::LOWEST</a> = 0x1F, 
+<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68a41bc94cbd8eebea13ce0491b2ac11b88">ThreadPriority::LOW</a> = 0x3F, 
+<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68a1e23852820b9154316c7c06e2b7ba051">ThreadPriority::NORMAL</a> = 0x7F, 
+<br />
+&#160;&#160;<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68ab89de3b4b81c4facfac906edf29aec8c">ThreadPriority::HIGH</a> = 0x9F, 
+<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68ad08bf58ccd0f9cf567cf14bf1216369f">ThreadPriority::HIGHEST</a> = 0xBF, 
+<a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68a4abfc22ad3c3ef567d80c65263fd7754">ThreadPriority::REALTIME</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="memdesc:a9c0a61403e6afce5de28a26592268f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread priorities.  <a href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68">More...</a><br /></td></tr>
+<tr class="separator:a9c0a61403e6afce5de28a26592268f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34cf8e6f7bf7a4c826ced4c537fa8c58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58">Weekday</a> { <br />
+&#160;&#160;<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58a9d1a0949c39e66a0cd65240bc0ac9177">Weekday::Sunday</a>, 
+<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58a6f8522e0610541f1ef215a22ffa66ff6">Weekday::Monday</a>, 
+<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58a5792315f09a5d54fb7e3d066672b507f">Weekday::Tuesday</a>, 
+<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58a796c163589f295373e171842f37265d5">Weekday::Wednesday</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58a78ae6f0cd191d25147e252dc54768238">Weekday::Thursday</a>, 
+<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58ac33b138a163847cdb6caeeb7c9a126b4">Weekday::Friday</a>, 
+<a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58a8b7051187b9191cdcdae6ed5a10e5adc">Weekday::Saturday</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a34cf8e6f7bf7a4c826ced4c537fa8c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weekday.  <a href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58">More...</a><br /></td></tr>
+<tr class="separator:a34cf8e6f7bf7a4c826ced4c537fa8c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -781,30 +810,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a218fdd7f177db29e92d319363146d195"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U , class TMemoryManager , bool nothrow&gt; </td></tr>
 <tr class="memitem:a218fdd7f177db29e92d319363146d195"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a218fdd7f177db29e92d319363146d195">operator!=</a> (const <a class="el" href="class_cpp_common_1_1_allocator.html">Allocator</a>&lt; T, TMemoryManager, nothrow &gt; &amp;alloc1, const <a class="el" href="class_cpp_common_1_1_allocator.html">Allocator</a>&lt; U, TMemoryManager, nothrow &gt; &amp;alloc2) noexcept</td></tr>
 <tr class="separator:a218fdd7f177db29e92d319363146d195"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ea5d697431474db9a128de1d09fcb2"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:af4ea5d697431474db9a128de1d09fcb2"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#af4ea5d697431474db9a128de1d09fcb2">format</a> (std::string_view pattern, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:af4ea5d697431474db9a128de1d09fcb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format string.  <a href="namespace_cpp_common.html#af4ea5d697431474db9a128de1d09fcb2">More...</a><br /></td></tr>
-<tr class="separator:af4ea5d697431474db9a128de1d09fcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe0943a98a84a8feaf67ea986dabb435"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:abe0943a98a84a8feaf67ea986dabb435"><td class="memTemplItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#abe0943a98a84a8feaf67ea986dabb435">format</a> (std::wstring_view pattern, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:abe0943a98a84a8feaf67ea986dabb435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format wide string.  <a href="namespace_cpp_common.html#abe0943a98a84a8feaf67ea986dabb435">More...</a><br /></td></tr>
-<tr class="separator:abe0943a98a84a8feaf67ea986dabb435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9618fc6b1b265e0ce9fa15dc58abe5da"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a9618fc6b1b265e0ce9fa15dc58abe5da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a9618fc6b1b265e0ce9fa15dc58abe5da">print</a> (std::string_view pattern, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a9618fc6b1b265e0ce9fa15dc58abe5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format string and print it into the std::cout.  <a href="namespace_cpp_common.html#a9618fc6b1b265e0ce9fa15dc58abe5da">More...</a><br /></td></tr>
-<tr class="separator:a9618fc6b1b265e0ce9fa15dc58abe5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e7c6b50e9d5fb1144476c0b38f1f33"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:aa9e7c6b50e9d5fb1144476c0b38f1f33"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#aa9e7c6b50e9d5fb1144476c0b38f1f33">print</a> (std::wstring_view pattern, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:aa9e7c6b50e9d5fb1144476c0b38f1f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format wide string and print it into the std::wcout.  <a href="namespace_cpp_common.html#aa9e7c6b50e9d5fb1144476c0b38f1f33">More...</a><br /></td></tr>
-<tr class="separator:aa9e7c6b50e9d5fb1144476c0b38f1f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b28888c0cc08a80a48a8d0760557cb"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a16b28888c0cc08a80a48a8d0760557cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a16b28888c0cc08a80a48a8d0760557cb">print</a> (std::ostream &amp;stream, std::string_view pattern, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a16b28888c0cc08a80a48a8d0760557cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format string and print it into the given std::ostream.  <a href="namespace_cpp_common.html#a16b28888c0cc08a80a48a8d0760557cb">More...</a><br /></td></tr>
-<tr class="separator:a16b28888c0cc08a80a48a8d0760557cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1962534fa99bf3ea8cfb3c8c04d5551b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a1962534fa99bf3ea8cfb3c8c04d5551b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a1962534fa99bf3ea8cfb3c8c04d5551b">print</a> (std::wostream &amp;stream, std::wstring_view pattern, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a1962534fa99bf3ea8cfb3c8c04d5551b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format wide string and print it into the given std::wostream.  <a href="namespace_cpp_common.html#a1962534fa99bf3ea8cfb3c8c04d5551b">More...</a><br /></td></tr>
-<tr class="separator:a1962534fa99bf3ea8cfb3c8c04d5551b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed91317f783dd697e600cd2fa472b9d5"><td class="memTemplParams" colspan="2">template&lt;typename TString , typename... Args&gt; </td></tr>
+<tr class="memitem:aed91317f783dd697e600cd2fa472b9d5"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#aed91317f783dd697e600cd2fa472b9d5">format</a> (const TString &amp;pattern, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aed91317f783dd697e600cd2fa472b9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format string.  <a href="namespace_cpp_common.html#aed91317f783dd697e600cd2fa472b9d5">More...</a><br /></td></tr>
+<tr class="separator:aed91317f783dd697e600cd2fa472b9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf73a169b9d8bd8f55bd59e7320db4c"><td class="memTemplParams" colspan="2">template&lt;typename TString , typename... Args&gt; </td></tr>
+<tr class="memitem:a6bf73a169b9d8bd8f55bd59e7320db4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a6bf73a169b9d8bd8f55bd59e7320db4c">print</a> (const TString &amp;pattern, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a6bf73a169b9d8bd8f55bd59e7320db4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format string and print it into the std::cout.  <a href="namespace_cpp_common.html#a6bf73a169b9d8bd8f55bd59e7320db4c">More...</a><br /></td></tr>
+<tr class="separator:a6bf73a169b9d8bd8f55bd59e7320db4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddd9d373f5c3b9f5c260c251a8a1fa4"><td class="memTemplParams" colspan="2">template&lt;typename TOutputStream , typename TString , typename... Args&gt; </td></tr>
+<tr class="memitem:adddd9d373f5c3b9f5c260c251a8a1fa4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#adddd9d373f5c3b9f5c260c251a8a1fa4">print</a> (TOutputStream &amp;stream, const TString &amp;pattern, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:adddd9d373f5c3b9f5c260c251a8a1fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format string and print it into the given std::ostream.  <a href="namespace_cpp_common.html#adddd9d373f5c3b9f5c260c251a8a1fa4">More...</a><br /></td></tr>
+<tr class="separator:adddd9d373f5c3b9f5c260c251a8a1fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c153c2e37163262f65756cd183de50"><td class="memTemplParams" colspan="2">template&lt;class TOutputStream &gt; </td></tr>
 <tr class="memitem:af9c153c2e37163262f65756cd183de50"><td class="memTemplItemLeft" align="right" valign="top">TOutputStream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#af9c153c2e37163262f65756cd183de50">operator&lt;&lt;</a> (TOutputStream &amp;stream, <a class="el" href="namespace_cpp_common.html#ac1ca6affe95577c60f18950cd8682db4">Color</a> color)</td></tr>
 <tr class="memdesc:af9c153c2e37163262f65756cd183de50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream manipulator: change console text color.  <a href="namespace_cpp_common.html#af9c153c2e37163262f65756cd183de50">More...</a><br /></td></tr>
@@ -829,6 +846,14 @@ Functions</h2></td></tr>
 <tr class="separator:a4a2c8ef0a6092224bd4a19edc5f931b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c0ba7d01f131ca440b9ed1733dd022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a76c0ba7d01f131ca440b9ed1733dd022">swap</a> (<a class="el" href="class_cpp_common_1_1_u_u_i_d.html">UUID</a> &amp;uuid1, <a class="el" href="class_cpp_common_1_1_u_u_i_d.html">UUID</a> &amp;uuid2) noexcept</td></tr>
 <tr class="separator:a76c0ba7d01f131ca440b9ed1733dd022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b65319d62f9c3f0d761cd102714d6e"><td class="memTemplParams" colspan="2">template&lt;class TOutputStream &gt; </td></tr>
+<tr class="memitem:a37b65319d62f9c3f0d761cd102714d6e"><td class="memTemplItemLeft" align="right" valign="top">TOutputStream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a37b65319d62f9c3f0d761cd102714d6e">operator&lt;&lt;</a> (TOutputStream &amp;stream, <a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68">ThreadPriority</a> priority)</td></tr>
+<tr class="memdesc:a37b65319d62f9c3f0d761cd102714d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream output: <a class="el" href="class_cpp_common_1_1_thread.html" title="Thread abstraction.">Thread</a> priorities.  <a href="namespace_cpp_common.html#a37b65319d62f9c3f0d761cd102714d6e">More...</a><br /></td></tr>
+<tr class="separator:a37b65319d62f9c3f0d761cd102714d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05ca7c24c8e5562cf39b146557df754"><td class="memTemplParams" colspan="2">template&lt;class TOutputStream &gt; </td></tr>
+<tr class="memitem:aa05ca7c24c8e5562cf39b146557df754"><td class="memTemplItemLeft" align="right" valign="top">TOutputStream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#aa05ca7c24c8e5562cf39b146557df754">operator&lt;&lt;</a> (TOutputStream &amp;stream, <a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58">Weekday</a> weekday)</td></tr>
+<tr class="memdesc:aa05ca7c24c8e5562cf39b146557df754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream output: Weekday.  <a href="namespace_cpp_common.html#aa05ca7c24c8e5562cf39b146557df754">More...</a><br /></td></tr>
+<tr class="separator:aa05ca7c24c8e5562cf39b146557df754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f6b4f760fa0abdaa1a1c885cfd8de5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#a83f6b4f760fa0abdaa1a1c885cfd8de5">operator==</a> (const <a class="el" href="class_cpp_common_1_1_time.html">Time</a> &amp;time1, const <a class="el" href="class_cpp_common_1_1_time.html">Time</a> &amp;time2) noexcept</td></tr>
 <tr class="separator:a83f6b4f760fa0abdaa1a1c885cfd8de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe4fd3d24f1561115b2b49e980bb8aaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#afe4fd3d24f1561115b2b49e980bb8aaf">operator!=</a> (const <a class="el" href="class_cpp_common_1_1_time.html">Time</a> &amp;time1, const <a class="el" href="class_cpp_common_1_1_time.html">Time</a> &amp;time2) noexcept</td></tr>
@@ -888,7 +913,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:adac2cda3dd10d945032bcf5e1b3d1561"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#adac2cda3dd10d945032bcf5e1b3d1561">version</a> [] = &quot;1.0.0.0&quot;</td></tr>
+<tr class="memitem:adac2cda3dd10d945032bcf5e1b3d1561"><td class="memItemLeft" align="right" valign="top">const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_cpp_common.html#adac2cda3dd10d945032bcf5e1b3d1561">version</a> [] = &quot;1.0.3.0&quot;</td></tr>
 <tr class="memdesc:adac2cda3dd10d945032bcf5e1b3d1561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Project version.  <a href="namespace_cpp_common.html#adac2cda3dd10d945032bcf5e1b3d1561">More...</a><br /></td></tr>
 <tr class="separator:adac2cda3dd10d945032bcf5e1b3d1561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1228,6 +1253,83 @@ template&lt;typename T , size_t N, bool nothrow = false&gt; </div>
 
 </div>
 </div>
+<a id="a9c0a61403e6afce5de28a26592268f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0a61403e6afce5de28a26592268f68">&#9670;&nbsp;</a></span>ThreadPriority</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68">CppCommon::ThreadPriority</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_cpp_common_1_1_thread.html" title="Thread abstraction.">Thread</a> priorities. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68aa5daf7f2ebbba4975d61dab1c40188c7"></a>IDLE&#160;</td><td class="fielddoc"><p>Idle thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68a664626f39fdbfdb9cfe98285a9e161f9"></a>LOWEST&#160;</td><td class="fielddoc"><p>Lowest thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68a41bc94cbd8eebea13ce0491b2ac11b88"></a>LOW&#160;</td><td class="fielddoc"><p>Low thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68a1e23852820b9154316c7c06e2b7ba051"></a>NORMAL&#160;</td><td class="fielddoc"><p>Normal thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68ab89de3b4b81c4facfac906edf29aec8c"></a>HIGH&#160;</td><td class="fielddoc"><p>High thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68ad08bf58ccd0f9cf567cf14bf1216369f"></a>HIGHEST&#160;</td><td class="fielddoc"><p>Highest thread priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9c0a61403e6afce5de28a26592268f68a4abfc22ad3c3ef567d80c65263fd7754"></a>REALTIME&#160;</td><td class="fielddoc"><p>Realtime thread priority. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="thread_8h_source.html#l00027">27</a> of file <a class="el" href="thread_8h_source.html">thread.h</a>.</p>
+
+</div>
+</div>
+<a id="a34cf8e6f7bf7a4c826ced4c537fa8c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34cf8e6f7bf7a4c826ced4c537fa8c58">&#9670;&nbsp;</a></span>Weekday</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58">CppCommon::Weekday</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Weekday. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58a9d1a0949c39e66a0cd65240bc0ac9177"></a>Sunday&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58a6f8522e0610541f1ef215a22ffa66ff6"></a>Monday&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58a5792315f09a5d54fb7e3d066672b507f"></a>Tuesday&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58a796c163589f295373e171842f37265d5"></a>Wednesday&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58a78ae6f0cd191d25147e252dc54768238"></a>Thursday&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58ac33b138a163847cdb6caeeb7c9a126b4"></a>Friday&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a34cf8e6f7bf7a4c826ced4c537fa8c58a8b7051187b9191cdcdae6ed5a10e5adc"></a>Saturday&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="time_8h_source.html#l00017">17</a> of file <a class="el" href="time_8h_source.html">time.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abbfae32713b7c80d6dc8354f6516113a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbfae32713b7c80d6dc8354f6516113a">&#9670;&nbsp;</a></span>countof() <span class="overload">[1/2]</span></h2>
@@ -1414,13 +1516,13 @@ template&lt;typename T , size_t N&gt; </div>
 
 </div>
 </div>
-<a id="af4ea5d697431474db9a128de1d09fcb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ea5d697431474db9a128de1d09fcb2">&#9670;&nbsp;</a></span>format() <span class="overload">[1/2]</span></h2>
+<a id="aed91317f783dd697e600cd2fa472b9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed91317f783dd697e600cd2fa472b9d5">&#9670;&nbsp;</a></span>format()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename TString , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1428,7 +1530,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname">std::string CppCommon::format </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
           <td class="paramname"><em>pattern</em>, </td>
         </tr>
         <tr>
@@ -1465,58 +1567,6 @@ template&lt;typename... Args&gt; </div>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00012">12</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
-
-</div>
-</div>
-<a id="abe0943a98a84a8feaf67ea986dabb435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe0943a98a84a8feaf67ea986dabb435">&#9670;&nbsp;</a></span>format() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::wstring CppCommon::format </td>
-          <td>(</td>
-          <td class="paramtype">std::wstring_view&#160;</td>
-          <td class="paramname"><em>pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format wide string. </p>
-<p>Format wide string with the help of {fmt} library (<a href="http://fmtlib.net">http://fmtlib.net</a>)</p>
-<p>Thread-safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pattern</td><td>- Format wide string pattern </td></tr>
-    <tr><td class="paramname">args</td><td>- Format arguments </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Formatted wide string </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00018">18</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1722,7 @@ template&lt;typename T , typename U , class TMemoryManager , bool nothrow&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00031">31</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00064">64</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -2359,7 +2409,7 @@ template&lt;typename TEnum &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00085">85</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00118">118</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -2442,7 +2492,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="a22aa609bfc3b318b37e42fade17abecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22aa609bfc3b318b37e42fade17abecf">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22aa609bfc3b318b37e42fade17abecf">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2480,7 +2530,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="ada4f5a52e3496afdb9c36090f9132e21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada4f5a52e3496afdb9c36090f9132e21">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4f5a52e3496afdb9c36090f9132e21">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2518,7 +2568,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="ae201e9b8689edc5af3856f34c13dbe94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae201e9b8689edc5af3856f34c13dbe94">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae201e9b8689edc5af3856f34c13dbe94">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[3/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2556,7 +2606,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="a6e51132e80aeba7ed622850b6e821043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e51132e80aeba7ed622850b6e821043">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e51132e80aeba7ed622850b6e821043">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[4/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2581,12 +2631,12 @@ template&lt;typename TEnum &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stack__trace_8cpp_source.html#l00257">257</a> of file <a class="el" href="stack__trace_8cpp_source.html">stack_trace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stack__trace_8cpp_source.html#l00262">262</a> of file <a class="el" href="stack__trace_8cpp_source.html">stack_trace.cpp</a>.</p>
 
 </div>
 </div>
 <a id="ab5de8c795524edc3d96377096077633d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5de8c795524edc3d96377096077633d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5de8c795524edc3d96377096077633d">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[5/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2611,12 +2661,12 @@ template&lt;typename TEnum &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stack__trace_8cpp_source.html#l00043">43</a> of file <a class="el" href="stack__trace_8cpp_source.html">stack_trace.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stack__trace_8cpp_source.html#l00048">48</a> of file <a class="el" href="stack__trace_8cpp_source.html">stack_trace.cpp</a>.</p>
 
 </div>
 </div>
 <a id="a0d7f3241f60ad5779fb85f314085a3e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7f3241f60ad5779fb85f314085a3e2">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d7f3241f60ad5779fb85f314085a3e2">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[6/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2656,7 +2706,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="acead4c349e4f714381eb43d208051011"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acead4c349e4f714381eb43d208051011">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acead4c349e4f714381eb43d208051011">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[7/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2694,7 +2744,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="a42a1700fa2eef1225b930ddfffba1a6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42a1700fa2eef1225b930ddfffba1a6f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a1700fa2eef1225b930ddfffba1a6f">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[8/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2732,7 +2782,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="a9c3a55d007661212c4a1ee03550b9161"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c3a55d007661212c4a1ee03550b9161">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3a55d007661212c4a1ee03550b9161">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[9/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2770,7 +2820,7 @@ template&lt;typename TEnum &gt; </div>
 </div>
 </div>
 <a id="af9c153c2e37163262f65756cd183de50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9c153c2e37163262f65756cd183de50">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c153c2e37163262f65756cd183de50">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2820,7 +2870,7 @@ template&lt;class TOutputStream &gt; </div>
 </div>
 </div>
 <a id="aee284eeaaecbc1f13d803d236f34f570"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee284eeaaecbc1f13d803d236f34f570">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[11/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee284eeaaecbc1f13d803d236f34f570">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[11/13]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2869,6 +2919,106 @@ template&lt;class TOutputStream &gt; </div>
 
 </div>
 </div>
+<a id="a37b65319d62f9c3f0d761cd102714d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37b65319d62f9c3f0d761cd102714d6e">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[12/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOutputStream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TOutputStream &amp; CppCommon::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">TOutputStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_cpp_common.html#a9c0a61403e6afce5de28a26592268f68">ThreadPriority</a>&#160;</td>
+          <td class="paramname"><em>priority</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stream output: <a class="el" href="class_cpp_common_1_1_thread.html" title="Thread abstraction.">Thread</a> priorities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>- Output stream </td></tr>
+    <tr><td class="paramname">priority</td><td>- <a class="el" href="class_cpp_common_1_1_thread.html" title="Thread abstraction.">Thread</a> priority </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Output stream </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="thread_8inl_source.html#l00012">12</a> of file <a class="el" href="thread_8inl_source.html">thread.inl</a>.</p>
+
+</div>
+</div>
+<a id="aa05ca7c24c8e5562cf39b146557df754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05ca7c24c8e5562cf39b146557df754">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOutputStream &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TOutputStream &amp; CppCommon::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">TOutputStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_cpp_common.html#a34cf8e6f7bf7a4c826ced4c537fa8c58">Weekday</a>&#160;</td>
+          <td class="paramname"><em>weekday</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stream output: Weekday. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>- Output stream </td></tr>
+    <tr><td class="paramname">weekday</td><td>- Weekday </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Output stream </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00012">12</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+
+</div>
+</div>
 <a id="a3f307777904946bcabf95beaea524395"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f307777904946bcabf95beaea524395">&#9670;&nbsp;</a></span>operator&lt;=() <span class="overload">[1/3]</span></h2>
 
@@ -2903,7 +3053,7 @@ template&lt;class TOutputStream &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00179">179</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00212">212</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -3095,7 +3245,7 @@ template&lt;typename T , typename U , class TMemoryManager , bool nothrow&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00024">24</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00057">57</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -3209,7 +3359,7 @@ template&lt;typename T , typename U , class TMemoryManager , bool nothrow&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00038">38</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00071">71</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -3323,7 +3473,7 @@ template&lt;typename T , typename U , class TMemoryManager , bool nothrow&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00132">132</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00165">165</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -3789,13 +3939,13 @@ template&lt;typename TEnum &gt; </div>
 
 </div>
 </div>
-<a id="a16b28888c0cc08a80a48a8d0760557cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b28888c0cc08a80a48a8d0760557cb">&#9670;&nbsp;</a></span>print() <span class="overload">[1/4]</span></h2>
+<a id="a6bf73a169b9d8bd8f55bd59e7320db4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf73a169b9d8bd8f55bd59e7320db4c">&#9670;&nbsp;</a></span>print() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename TString , typename... Args&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -3803,13 +3953,64 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="memname">void CppCommon::print </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Format string and print it into the std::cout. </p>
+<p>Format string with the help of {fmt} library (<a href="http://fmtlib.net">http://fmtlib.net</a>)</p>
+<p>Thread-safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pattern</td><td>- Format string pattern </td></tr>
+    <tr><td class="paramname">args</td><td>- Format arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00018">18</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
+
+</div>
+</div>
+<a id="adddd9d373f5c3b9f5c260c251a8a1fa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddd9d373f5c3b9f5c260c251a8a1fa4">&#9670;&nbsp;</a></span>print() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TOutputStream , typename TString , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CppCommon::print </td>
+          <td>(</td>
+          <td class="paramtype">TOutputStream &amp;&#160;</td>
           <td class="paramname"><em>stream</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
           <td class="paramname"><em>pattern</em>, </td>
         </tr>
         <tr>
@@ -3843,167 +4044,7 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00036">36</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
-
-</div>
-</div>
-<a id="a9618fc6b1b265e0ce9fa15dc58abe5da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9618fc6b1b265e0ce9fa15dc58abe5da">&#9670;&nbsp;</a></span>print() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CppCommon::print </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format string and print it into the std::cout. </p>
-<p>Format string with the help of {fmt} library (<a href="http://fmtlib.net">http://fmtlib.net</a>)</p>
-<p>Thread-safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pattern</td><td>- Format string pattern </td></tr>
-    <tr><td class="paramname">args</td><td>- Format arguments </td></tr>
-  </table>
-  </dd>
-</dl>
-
 <p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00024">24</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
-
-</div>
-</div>
-<a id="a1962534fa99bf3ea8cfb3c8c04d5551b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1962534fa99bf3ea8cfb3c8c04d5551b">&#9670;&nbsp;</a></span>print() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CppCommon::print </td>
-          <td>(</td>
-          <td class="paramtype">std::wostream &amp;&#160;</td>
-          <td class="paramname"><em>stream</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::wstring_view&#160;</td>
-          <td class="paramname"><em>pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format wide string and print it into the given std::wostream. </p>
-<p>Format wide string with the help of {fmt} library (<a href="http://fmtlib.net">http://fmtlib.net</a>)</p>
-<p>Thread-safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">stream</td><td>- Output wide stream </td></tr>
-    <tr><td class="paramname">pattern</td><td>- Format wide string pattern </td></tr>
-    <tr><td class="paramname">args</td><td>- Format arguments </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00042">42</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
-
-</div>
-</div>
-<a id="aa9e7c6b50e9d5fb1144476c0b38f1f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e7c6b50e9d5fb1144476c0b38f1f33">&#9670;&nbsp;</a></span>print() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CppCommon::print </td>
-          <td>(</td>
-          <td class="paramtype">std::wstring_view&#160;</td>
-          <td class="paramname"><em>pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Format wide string and print it into the std::wcout. </p>
-<p>Format wide string with the help of {fmt} library (<a href="http://fmtlib.net">http://fmtlib.net</a>)</p>
-<p>Thread-safe.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pattern</td><td>- Format wide string pattern </td></tr>
-    <tr><td class="paramname">args</td><td>- Format arguments </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="format_8inl_source.html#l00030">30</a> of file <a class="el" href="format_8inl_source.html">format.inl</a>.</p>
 
 </div>
 </div>
@@ -4798,7 +4839,7 @@ template&lt;class R , class... Args, size_t Capacity&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="function_8inl_source.html#l00147">147</a> of file <a class="el" href="function_8inl_source.html">function.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8inl_source.html#l00152">152</a> of file <a class="el" href="function_8inl_source.html">function.inl</a>.</p>
 
 </div>
 </div>
@@ -5782,7 +5823,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00240">240</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
+<p class="definition">Definition at line <a class="el" href="time_8inl_source.html#l00273">273</a> of file <a class="el" href="time_8inl_source.html">time.inl</a>.</p>
 
 </div>
 </div>
@@ -6022,7 +6063,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char CppCommon::version[] = &quot;1.0.0.0&quot;</td>
+          <td class="memname">const char CppCommon::version[] = &quot;1.0.3.0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CppCommon
-   &#160;<span id="projectnumber">1.0.0.0</span>
+   &#160;<span id="projectnumber">1.0.3.0</span>
    </div>
    <div id="projectbrief">C++ Common Library</div>
   </td>
@@ -117,24 +117,27 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">using</span> Invoker = R (*)(<span class="keywordtype">void</span>*, Args&amp;&amp;...);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> Manager = void (*)(<span class="keywordtype">void</span>*, <span class="keywordtype">void</span>*, Operation);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> Storage = <span class="keyword">typename</span> std::aligned_storage&lt;Capacity - <span class="keyword">sizeof</span>(Invoker) - <span class="keyword">sizeof</span>(Manager), 8&gt;::type;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Storage _data;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Invoker _invoker;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Manager _manager;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> R Invoke(<span class="keywordtype">void</span>* data, Args&amp;&amp;... args) noexcept;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> StorageSize = Capacity - <span class="keyword">sizeof</span>(Invoker) - <span class="keyword">sizeof</span>(Manager);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> StorageAlign = 8;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">using</span> Storage = <span class="keyword">typename</span> std::aligned_storage&lt;StorageSize, StorageAlign&gt;::type;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    Storage _data;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Invoker _invoker;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Manager _manager;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> Manage(<span class="keywordtype">void</span>* dst, <span class="keywordtype">void</span>* src, Operation op) noexcept;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace CppCommon</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="function_8inl.html">function.inl</a>&quot;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // CPPCOMMON_FUNCTION_H</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> R Invoke(<span class="keywordtype">void</span>* data, Args&amp;&amp;... args) noexcept;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TFunction&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> Manage(<span class="keywordtype">void</span>* dst, <span class="keywordtype">void</span>* src, Operation op) noexcept;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace CppCommon</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="function_8inl.html">function.inl</a>&quot;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // CPPCOMMON_FUNCTION_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_cpp_common_1_1_function_html"><div class="ttname"><a href="class_cpp_common_1_1_function.html">CppCommon::Function</a></div><div class="ttdoc">Allocation free function stub.</div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00019">function.h:19</a></div></div>
 <div class="ttc" id="anamespace_cpp_common_html_a679bac9e60293a6d0c3ae90e291b3231"><div class="ttname"><a href="namespace_cpp_common.html#a679bac9e60293a6d0c3ae90e291b3231">CppCommon::swap</a></div><div class="ttdeci">void swap(FileCache &amp;cache1, FileCache &amp;cache2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="filecache_8inl_source.html#l00023">filecache.inl:23</a></div></div>
