@@ -5,8 +5,9 @@ if(NOT TARGET fmt)
   list(FILTER SOURCE_FILES EXCLUDE REGEX ".*/fmt.cc")
   add_library(fmt ${SOURCE_FILES})
   if(MSVC)
+    # C4127: conditional expression is constant
     # C4702: unreachable code
-    set_target_properties(fmt PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS} /wd4702")
+    set_target_properties(fmt PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS} /wd4127 /wd4702")
   else()
     set_target_properties(fmt PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS} -Wno-shadow")
   endif()
